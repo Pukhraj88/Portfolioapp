@@ -1,0 +1,106 @@
+
+.col8 {
+  margin: 0;
+}
+
+
+.name-yourself {
+  margin: 0;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  position: relative;
+}
+.name-yourself::before {
+  content: "iam";
+  position: absolute;
+color: rgb(35, 39, 34);
+font-family: "Pacifico";
+font-weight: 500;
+font-size: 15px;
+left: 0%;
+top: 0%;
+translate: -0% -50%;
+}
+.col8 h5 {
+  margin: 0;
+  font-family: "Edu AU VIC WA NT Arrows", cursive;
+  font-size: .9rem;
+  line-height: .8rem;
+}
+
+
+.col8 p {
+  font-family: "jost";
+  margin: 0;
+  padding: 0;
+}
+
+.col4 {
+  margin: 0;
+}
+
+
+.icons{
+   align-items: center;
+   justify-content: center;
+    display: flex;
+    gap: 1rem;
+padding: 0;
+}
+
+.icons li{
+ 
+    list-style: none;
+}
+.icons li span{
+    background-color: black;
+    padding: 0.45rem 0.4rem 0.2rem 0.4rem;
+    border-radius: 50%;
+color: lime;
+}
+
+
+@media (max-width: 575px) {
+  .hero-section {
+    padding: 0.8rem;
+    display: grid;
+    margin: auto;
+  }
+    .cv-btn{
+        width: 5.5rem;
+        font-family: 'Inter';
+        font-weight: 600;
+    background-color: lime;
+    outline: none;
+    border-radius: 1rem;
+    border: none;
+    font-size: .8rem;
+    padding:0.6rem;
+    margin: 0;
+    }
+    .cv-btn>a{
+      text-decoration: none;
+      color: black;
+          }
+  }
+  @media (min-width: 576px) {
+    .hero-section {
+      padding: 0.8rem;
+      display: grid;
+      grid-template-columns: 8fr 4fr;
+    }
+    .cv-btn{
+        font-family: 'Inter';
+        font-weight: 600;
+    background-color: lime;
+    outline: none;
+    border-radius: 1rem;
+    border: none;
+    font-size: .8rem;
+    padding:0.5rem;
+    }
+    .cv-btn>a{
+text-decoration: none;
+color: black;
+
+    }
+  }

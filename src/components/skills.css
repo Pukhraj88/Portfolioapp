@@ -1,0 +1,165 @@
+.title-skill{
+    text-align: center;
+    font-family: 'Inter';
+}
+.title-skill>span{
+color: rgba(14, 196, 241, 0.918);
+}
+
+
+/* line colored */
+.colored-box{
+    width: 90%;
+    margin:auto;
+}
+.colored-box>li{
+list-style-type: none;
+margin: 0;
+padding: 0;
+line-height: 0;
+}
+.colored-box>li>p{
+    font-family: inter;
+    font-size: 9px;
+}
+.half-colored-line {
+    width: 85%;
+    height: 6px;
+  }
+
+
+
+  /* professinal skills here */
+  
+.radial-bars .radial-bar .progress-bar{
+stroke-width: 5;
+stroke: black;
+fill: transparent;
+stroke-dasharray: 502;
+stroke-dashoffset: 502;
+stroke-linecap: round;
+animation: animate-bar 1s linear forwards;
+}
+@keyframes animate-bar {100%{stroke-dashoffset: -1;}}
+.path{
+    stroke-width: 5;
+    stroke: #0ef;
+    fill: transparent;
+    stroke-linecap: round;
+}
+.path-1{animation: animate-path1 1s 1s linear forwards;
+    stroke-dasharray: 241;
+stroke-dashoffset: 241;
+}
+.path-2{animation: animate-path2 1s 1s linear forwards;
+    stroke-dasharray: 271;
+stroke-dashoffset: 271;
+}
+.path-3{animation: animate-path3 1s 1s linear forwards;
+    stroke-dasharray: 300;
+stroke-dashoffset: 300;
+}
+.path-4{animation: animate-path4 1s 1s linear forwards;
+    stroke-dasharray: 191;
+stroke-dashoffset: 191;
+}
+
+@keyframes animate-path1 {100%{stroke-dashoffset:50;}}
+@keyframes animate-path2 {100%{stroke-dashoffset:50;}}
+@keyframes animate-path3 {100%{stroke-dashoffset:50;}}
+@keyframes animate-path4 {100%{stroke-dashoffset:50;}}
+
+.circle-container {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/* media queries */
+@media (max-width: 575px) {
+    .col-6>h1{
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Inter';
+        text-decoration: underline;
+    }
+    .radius {
+        cx: 85px;
+        cy: 70px;
+        r: 55px;
+    } 
+    .radius1 {
+        cx: 85px;
+        cy: 70px;
+        r: 55px;
+    } 
+    .percentage{
+        text-align: center;
+        top: -90px;
+        position: relative;
+        color: white;
+        font-size: 25px;
+        font-family: 'urbanist';
+        font-weight:600;
+    }
+    .professionalskill{
+    font-family: 'urbanist';
+    font-weight:600;
+    text-align: center;
+    top: -45px;
+    position: relative;
+    }
+}
+
+@media (min-width: 576px) {
+    .skills{
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+    }
+    .col-6>div{
+        height: 450px;
+        align-content: center;
+    }
+    .col-6>h1{
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Inter';
+        text-decoration: underline;
+
+    }
+    .radius {
+        cx: 84px;
+        cy: 75px;
+        r: 45px;
+    } 
+    .radius1 {
+        cx: 84px;
+        cy: 75px;
+        r: 45px;
+    } 
+    .percentage{
+       margin: 0;
+       padding: 0;
+       text-align: center;
+       top: -45%;
+       position: relative;
+       color: white;
+       font-size: 1.5rem;
+       font-family: 'urbanist';
+       font-weight:600;
+    }
+    .professionalskill{
+    font-family: 'urbanist';
+    font-weight:600;
+    text-align: center;
+    position: relative;
+    top: -20%;
+    margin: 0;
+    padding: 0;
+    }
+}

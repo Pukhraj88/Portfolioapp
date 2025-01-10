@@ -1,0 +1,101 @@
+/* col-5 part */
+.colum-5,
+.colum-7 {
+  margin: 0;
+  padding: 0.8rem;
+}
+.colum-5 > p {
+  font-weight: 500;
+  margin: 0.5rem 0 0.7rem 0;
+  padding: 0;
+  color: white;
+  /* color: black; */
+  font-size: 1rem;
+}
+.colum-5 > p > a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #fbd700;
+}
+
+/* col-7 part */
+.colum-7-form {
+  display: flex;
+  flex-direction: column;
+}
+.colum-7-form > label {
+  margin-top: 0.5rem;
+  padding: 0.1rem 0 0.1rem 0;
+  font-weight: 600;
+  color: white;
+  /* color: black; */
+
+  font-size: 1rem;
+}
+.colum-7-form > input[type="text"] {
+  width: 99%;
+  outline: none;
+  height: 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.1rem;
+}
+.colum-7-form > textarea {
+  width: 99%;
+  font-size: 1rem;
+  border-radius: 0.1rem;
+  outline: none;
+  border: none;
+  margin-bottom: 0.5rem;
+}
+.colum-7-form-btn {
+  margin: auto;
+  padding: 0.5rem;
+  text-align: center;
+  width: 40%;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  background-color: #fbd700;
+  color: black;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+
+/* media queries */
+@media (max-width: 575px) {
+  .containerfluid {
+    background-color: #333333;
+
+    font-family: "urbanist";
+    display: grid;
+    padding: 0;
+    margin: 0;
+  }
+  .colum-5 > h1,
+  .colum-7 > h1 {
+    color: gold;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (min-width: 576px) {
+  .containerfluid {
+    font-family: "urbanist";
+    background-color: #333333;
+
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    margin: 0;
+    padding: 0;
+  }
+  .colum-5 > h1,
+  .colum-7 > h1 {
+    text-align: center;
+    color: gold;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+  }
+}

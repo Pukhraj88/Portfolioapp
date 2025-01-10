@@ -1,0 +1,91 @@
+
+
+.text-footer-div {
+  margin-bottom: 10px;
+}
+.text-footer {
+  padding: 0px;
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  display: block;
+  color: #6b7280;
+}
+.icons-footer {
+  padding: 0;
+  color: #6b7280;
+  display: flex;
+  font-size: 20px;
+  margin: 0;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.icons-footer > li {
+  list-style: none;
+}
+.icons-footer > li>a {
+ text-decoration: none;
+ color: #6b7280;
+}
+
+
+/* Contact info footer */
+
+.contact-info-footer{
+  padding: 0;
+  color: #6b7280;
+}
+.contact-info-footer>li>h1{
+  margin: 0;
+  font-size: 25px;
+  color: #5c5c5c;
+  font-family: 'jost';
+}
+.contact-info-footer>li{
+    list-style: none;
+  }
+  .contact-info-footer>li>p>span{
+    position: absolute;
+    top: 14%;
+    left: 0%;
+  }
+  .contact-info-footer-p{
+   font-size: clamp(15px ,4vw,18px);
+    padding-left: 9%;
+    position: relative;
+    font-family: jost;
+    margin: 0;
+  }
+  /* quick links */
+.quick-links{
+  font-size: clamp(15px ,4vw,18px);
+  padding-left: 14%;
+  position: relative;
+  font-family: jost;
+  margin: 0;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 575px) {
+  .contact-info-footer-div{
+    display: flex;
+    justify-content: start; 
+    align-items: start;     
+    padding-left: 5%;
+  }
+}
+@media (min-width: 576px){
+  .contact-info-footer-div{
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    padding: 8%;   
+  }
+
+  #footer-container-div{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+  }
+}
